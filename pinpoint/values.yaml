@@ -1,5 +1,22 @@
-### See helm stable chart to apply other settings of MYSQL.
-### Link : https://github.com/helm/charts/tree/master/stable/mysql
+# Default values for pinpoint.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+pinpoint-collector:
+  replicaCount: 1
+
+###################################
+# Zookeeper - External Zookeeper
+###################################
+  externalZookeeperAddress: 
+
+###################################
+# Hbase - External Hbase
+###################################
+  externalHbaseAddress:
+
+hbase:
+  enabled: false
+  
 mysql:
   enable: true
   # docker image
