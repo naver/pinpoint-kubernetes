@@ -23,6 +23,7 @@ image:
   tag: 2.1.0
 
 service:
+  annotations: {}
   type: "LoadBalancer"
   nodePort:
   clusterIP:
@@ -42,4 +43,3 @@ loggingLevelRoot: INFO
 clusterEnable: true
 flink:
   enable: false
-
